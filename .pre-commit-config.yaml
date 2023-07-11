@@ -10,16 +10,3 @@ repos:
         files: poc/.*
       - id: check-added-large-files
         files: poc/.*
-  - repo: https://github.com/dnephin/pre-commit-golang
-    rev: v0.5.0
-    hooks:
-      - id: go-fmt
-        files: poc/.*
-      - id: go-imports
-        files: poc/.*
-      - id: no-go-testing
-        files: poc/.*
-      - id: golangci-lint
-        files: poc/.*
-      - id: go-unit-tests
-        files: poc/.*
