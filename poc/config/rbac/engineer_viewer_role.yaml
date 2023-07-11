@@ -1,0 +1,27 @@
+# permissions for end users to view engineers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: engineer-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: poc
+    app.kubernetes.io/part-of: poc
+    app.kubernetes.io/managed-by: kustomize
+  name: engineer-viewer-role
+rules:
+- apiGroups:
+  - kiratech.tutorial.status
+  resources:
+  - engineers
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - kiratech.tutorial.status
+  resources:
+  - engineers/status
+  verbs:
+  - get

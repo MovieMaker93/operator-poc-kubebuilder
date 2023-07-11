@@ -1,0 +1,7 @@
+apiVersion: kiratech.tutorial.status/v1
+kind: Engineer
+metadata:
+  name: engineer-sample-4
+spec:
+  company: Accenture
+  job: Engineer

@@ -1,0 +1,17 @@
+apiVersion: kiratech.tutorial.status/v1
+kind: Engineer
+metadata:
+  name: engineer-sample
+spec:
+  company: Kiratech
+  job: Engineer
+
+---
+
+apiVersion: kiratech.tutorial.status/v1
+kind: Engineer
+metadata:
+  name: engineer-sample-2
+spec:
+  company: Accenture
+  job: Engineer
